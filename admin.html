@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Perpustakaan Sekolah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Panel Admin Perpustakaan Sekolah</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#manageBooks">Kelola Buku</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="manageBooks">
+        <h2>Kelola Buku</h2>
+        <form id="addBookForm">
+            <label for="bookTitle">Judul Buku:</label>
+            <input type="text" id="bookTitle" required>
+            <label for="bookAuthor">Penulis:</label>
+            <input type="text" id="bookAuthor" required>
+            <button type="submit">Tambahkan Buku</button>
+        </form>
+        <div id="adminResult"></div>
+
+        <h3>Daftar Buku yang Ada</h3>
+        <ul id="bookList">
+            <!-- Daftar buku akan ditambahkan secara dinamis -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Admin Panel Perpustakaan Sekolah</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
